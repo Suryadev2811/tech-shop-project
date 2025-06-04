@@ -1,0 +1,75 @@
+.hero-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  background-color: #1a1a1a;
+}
+
+.hero-scroll {
+  display: flex;
+  width: max-content;
+}
+
+.hero-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100vw;
+  padding: 3rem 2rem;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 45%;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h3 {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.hero-text .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f00;
+}
+
+.hero-text .price span {
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-img img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.hero-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
